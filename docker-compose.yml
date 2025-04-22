@@ -1,21 +1,22 @@
 version: "3.8"
 services:
   admin-panel:
-    image: ghcr.io/opexdev/admin-panel
+    image: ghcr.io/opexdev/admin-panel:debug
     environment:
       - APP_TITLE=$ADMIN_TITLE
       - DESCRIPTION=$ADMIN_DESCRIPTION
-      - API_BASE_URL=$API_BASE_URL
+      - API_BASE_URL=http://api.cmcati.vn
       - FRONT_URL=$FRONT_URL
-      - CLIENT_ID=$CLIENT_ID
-      - CLIENT_SECRET=$CLIENT_SECRET
+      - CLIENT_ID=web-app
+      - CLIENT_SECRET=bb2b9088-fedc-4f1d-b5ca-96bcf68ebd3a
       - SUPERSET_URL=$SUPERSET_URL
       - CALENDAR_TYPE=$WEB_APP_CALENDAR_TYPE
     networks:
-      - default
+      - core_default
     deploy:
       restart_policy:
         condition: on-failure
 networks:
-  default:
+  core_default:
     driver: bridge
+    external: true
