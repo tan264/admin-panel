@@ -22,7 +22,8 @@ const Layout = () => {
                             lineHeight: "3vh",
                             fontSize: "0.8vw",
                             borderRadius: "4px",
-                            background: "#383a59",
+                            // background: "#383a59",
+                            background: "#24242C",
                         },
                         success: {
                             style: {

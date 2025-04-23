@@ -21,7 +21,10 @@ root.render(
     <ThemeProvider>
         <AuthProvider>
             <QueryClientProvider client={queryClient}>
-                <ReactQueryDevtools initialIsOpen={false}/>
+                {/* {process.env.NODE_ENV === 'development' && (<ReactQueryDevtools initialIsOpen={false}/>)} */}
+                {/* <ReactQueryDevtools initialIsOpen={false}/> */}
+
+                
                 <BrowserRouter>
                     <Routes>
                         <Route path="/*" element={<Opex/>}/>
