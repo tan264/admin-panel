@@ -4,7 +4,7 @@ import axios from "axios";
 export const useGetChains = () => {
     return useQuery(
         ['chains'], async () => {
-            const {data} = await axios.get('http://api.cmcati.vn/admin/chain')
+            const {data} = await axios.get('https://api.cmcati.vn/admin/chain')
             return data;
         },
         {

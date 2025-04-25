@@ -1,7 +1,6 @@
-version: "3.8"
 services:
   admin-panel:
-    image: ghcr.io/opexdev/admin-panel
+    image: ghcr.io/opexdev/admin-panel:debug
     build:
       context: .
       args:
