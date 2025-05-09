@@ -12,7 +12,7 @@
     "apexcharts": "^3.36.0",
     "axios": "^0.27.2",
     "bignumber.js": "^9.1.0",
-    "js-api-client": "https://github.com/opexdev/js-api-client.git#develop",
+    "js-api-client": "https://github.com/Pie-D/js-api-client.git#develop",
     "jwt-decode": "^3.1.2",
     "moment": "^2.29.4",
     "moment-jalaali": "^0.9.6",
